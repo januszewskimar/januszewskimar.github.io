@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <link rel="icon" href="img/logo.png">
+  <title>Adquirir entradas</title>
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="wireframe.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.png" width="80" height="50" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="agenda.html">Agenda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="entradas.html">Adquirir entradas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="iniciar-sesion.html">Iniciar sesión</a>
+        </li>
+      </ul>
+    </div>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+  </nav>
+  <div class="container pt-3">
+    <div class="row">
+      <div class="col">
+        <h2 class="">Adquirir entradas</h2>
+<form>
+  <div class="form-group">
+    <label for="correo">Dirección de correo</label>
+    <input type="email" class="form-control" id="correo" aria-describedby="emailHelp" placeholder="Introduzca su correo electrónico">
+    <small id="emailHelp" class="form-text text-muted">A esta dirección se enviarán las entradas</small>
+  </div>
+  <div class="form-group">
+    <label for="nombre">Nombre</label>
+    <input type="text" class="form-control" id="nombre" placeholder="Introduzca su nombre y apellidos">
+  </div>
+  <div class="form-group">
+    <label for="tarjeta">Tarjeta de crédito</label>
+    <input type="text" class="form-control" id="tarjeta" placeholder="Introduzca el número de la tarjeta">
+  </div>
+  <div class="form-group">
+    <label for="numero-entradas">Número de entradas</label>
+    <select class="form-control" id="numero-entradas">
+      <option>1</option>
+      <option>2</option>
+      <option>3</option>
+      <option>4</option>
+      <option>5</option>
+    </select>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-3">
+      <label for="dia">Día</label>
+      <select class="form-control" id="dia">
+        <option>Día</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+      </select>
+    </div>
+    <div class="form-group col-md-3">
+      <label for="mes">Mes</label>
+      <select class="form-control" id="mes">
+        <option>Enero</option>
+        <option>Febrero</option>
+        <option>Marzo</option>
+        <option>Abril</option>
+        <option>Mayo</option>
+        <option>Junio</option>
+        <option>Julio</option>
+        <option>Agosto</option>
+        <option>Septiembre</option>
+        <option>Octubre</option>
+        <option>Noviembre</option>
+        <option>Diciembre</option>
+      </select>
+    </div>
+    <div class="form-group col-md-3">
+      <label for="anio">Año</label>
+      <select class="form-control" id="anio">
+        <option>2020</option>
+        <option>2021</option>
+      </select>
+    </div>
+    <div class="form-group col-md-3">
+      <label for="hora">Hora</label>
+      <select class="form-control" id="hora">
+        <option>Hora</option>
+        <option>10:00</option>
+        <option>11:00</option>
+        <option>12:00</option>
+        <option>13:00</option>
+        <option>14:00</option>
+        <option>15:00</option>
+        <option>16:00</option>
+        <option>17:00</option>
+        <option>18:00</option>
+        <option>19:00</option>
+        <option>20:00</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group form-check">
+    <input type="checkbox" class="form-check-input" id="visita-guiada">
+    <label class="form-check-label" for="visita-guiada">Visita guiada</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Comprar</button>
+</form>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <ul class="list-unstyled quick-links">
+              <li><a href="contacto.html"><i class="fa fa-angle-double-right"></i>Contacto</a></li>
+              <li><a href="terminos-uso.html"><i class="fa fa-angle-double-right"></i>Términos de Uso</a></li>
+            </ul>
+          </div>
+          <div class="col-text-right">
+            <ul class="list- text-right">
+              <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook" style="font-size:36px"></i></a></li>
+              <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter" style="font-size:36px"></i></a></li>
+              <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram" style="font-size:36px"></i></a></li>
+              <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope" style="font-size:36px"></i></a></li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Introduzca su email" aria-label="Search">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suscríbase</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" style=""></script>
+</body>
+
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- PAGE settings -->
+  <link rel="icon" href="img/logo.png">
+  <title>Página Principal</title>
+  <!-- CSS dependencies -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="wireframe.css">
+  <script>
+    function login(){
+      var texto = document.getElementById("nombre_usuario").value;
+      texto = texto.toLowerCase();
+
+      if (texto.localeCompare("administrador") == 0)
+        window.location = 'empleados_admin.html';
+      else if (texto.localeCompare("contable") == 0)
+        window.location = 'movimientos.html';
+      else if (texto.localeCompare("guia") == 0 || texto.localeCompare("guía") == 0)
+        window.location = 'visitas.html';
+      else if (texto.localeCompare("catalogador") == 0)
+        window.location = 'obras.html';
+    }
+  </script>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.png" width="80" height="50" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="agenda.html">Agenda</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="entradas.html">Adquirir entradas</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="iniciar-sesion.html">Iniciar sesión</a>
+        </li>
+      </ul>
+    </div>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+  </nav>
+  <div class="container pt-3">
+    <div class="row justify-content-center d-flex">
+      <div class="col-md-auto pr-3 text-center col-lg-4 col-md-4">
+        <div class="bg-light border py-4 px-1">
+          <div class="row justify-content-center">
+            <h1 class="text-center pb-3">Iniciar sesión</h1>
+          </div>
+          <div class="row">
+            <div class="col">
+              <form>
+                <div class="form-group">
+                  <input type="text" class="form-control" id="nombre_usuario" placeholder="Nombre de usuario">
+                </div>
+                <div class="form-group">
+                  <input type="password" class="form-control" id="contrasenia" placeholder="Contraseña">
+                </div>
+                <button type="button" class="btn btn-primary" onclick="login()">Entrar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <ul class="list-unstyled quick-links">
+                <li><a href="contacto.html"><i class="fa fa-angle-double-right"></i>Contacto</a></li>
+                <li><a href="terminos-uso.html"><i class="fa fa-angle-double-right"></i>Términos de Uso</a></li>
+              </ul>
+            </div>
+            <div class="col-text-right">
+              <ul class="list- text-right">
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook" style="font-size:36px"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter" style="font-size:36px"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram" style="font-size:36px"></i></a></li>
+                <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope" style="font-size:36px"></i></a></li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Introduzca su email" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suscríbase</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" style=""></script>
+  </div>
+</body>
+
+</html>
